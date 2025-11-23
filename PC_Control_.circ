@@ -63,6 +63,10 @@
       <a name="radix" val="16"/>
       <a name="width" val="5"/>
     </comp>
+    <comp lib="0" loc="(280,590)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Zero"/>
+    </comp>
     <comp lib="0" loc="(340,1000)" name="Constant">
       <a name="value" val="0x1d"/>
       <a name="width" val="5"/>
@@ -91,17 +95,9 @@
       <a name="value" val="0x1c"/>
       <a name="width" val="5"/>
     </comp>
-    <comp lib="0" loc="(380,590)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="label" val="Zero"/>
-    </comp>
     <comp lib="0" loc="(530,750)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="LT"/>
-    </comp>
-    <comp lib="0" loc="(560,790)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="label" val="EQ"/>
     </comp>
     <comp lib="0" loc="(850,520)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -177,6 +173,10 @@
     <wire from="(210,920)" to="(210,980)"/>
     <wire from="(210,920)" to="(360,920)"/>
     <wire from="(210,980)" to="(360,980)"/>
+    <wire from="(280,590)" to="(300,590)"/>
+    <wire from="(300,590)" to="(300,780)"/>
+    <wire from="(300,590)" to="(380,590)"/>
+    <wire from="(300,780)" to="(530,780)"/>
     <wire from="(340,1000)" to="(360,1000)"/>
     <wire from="(340,640)" to="(360,640)"/>
     <wire from="(340,700)" to="(360,700)"/>
@@ -203,8 +203,9 @@
     <wire from="(480,670)" to="(700,670)"/>
     <wire from="(480,730)" to="(700,730)"/>
     <wire from="(530,700)" to="(530,750)"/>
+    <wire from="(530,780)" to="(530,790)"/>
+    <wire from="(530,790)" to="(570,790)"/>
     <wire from="(560,750)" to="(570,750)"/>
-    <wire from="(560,790)" to="(570,790)"/>
     <wire from="(620,770)" to="(630,770)"/>
     <wire from="(680,790)" to="(730,790)"/>
     <wire from="(700,670)" to="(700,690)"/>
