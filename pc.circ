@@ -56,34 +56,18 @@
     <a name="circuit" val="Program_Counter"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(280,320)" name="Pin">
+    <comp lib="0" loc="(260,340)" name="Constant"/>
+    <comp lib="0" loc="(270,390)" name="Clock">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="PC_Input"/>
-      <a name="radix" val="16"/>
-      <a name="width" val="20"/>
+      <a name="facing" val="north"/>
     </comp>
-    <comp lib="0" loc="(320,430)" name="Clock">
-      <a name="appearance" val="NewPins"/>
-    </comp>
-    <comp lib="0" loc="(380,250)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="PC"/>
-      <a name="radix" val="16"/>
-      <a name="type" val="output"/>
-      <a name="width" val="20"/>
+    <comp lib="0" loc="(340,410)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(390,420)" name="Constant">
       <a name="facing" val="north"/>
       <a name="value" val="0x2"/>
-      <a name="width" val="20"/>
-    </comp>
-    <comp lib="0" loc="(480,330)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="PC_Plus_2"/>
-      <a name="radix" val="16"/>
-      <a name="type" val="output"/>
       <a name="width" val="20"/>
     </comp>
     <comp lib="3" loc="(440,330)" name="Adder">
@@ -93,14 +77,18 @@
       <a name="appearance" val="logisim_evolution"/>
       <a name="width" val="20"/>
     </comp>
+    <wire from="(260,340)" to="(310,340)"/>
+    <wire from="(270,360)" to="(270,390)"/>
+    <wire from="(270,360)" to="(310,360)"/>
+    <wire from="(280,250)" to="(480,250)"/>
     <wire from="(280,320)" to="(310,320)"/>
-    <wire from="(320,430)" to="(340,430)"/>
-    <wire from="(340,380)" to="(340,430)"/>
+    <wire from="(340,380)" to="(340,410)"/>
     <wire from="(370,320)" to="(380,320)"/>
-    <wire from="(380,250)" to="(380,320)"/>
+    <wire from="(380,200)" to="(380,320)"/>
     <wire from="(380,320)" to="(400,320)"/>
     <wire from="(390,340)" to="(390,420)"/>
     <wire from="(390,340)" to="(400,340)"/>
     <wire from="(440,330)" to="(480,330)"/>
+    <wire from="(480,250)" to="(480,330)"/>
   </circuit>
 </project>
