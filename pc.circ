@@ -70,6 +70,7 @@
       <a name="value" val="0x2"/>
       <a name="width" val="20"/>
     </comp>
+    <comp lib="10" loc="(160,150)" name="Switch"/>
     <comp lib="3" loc="(440,330)" name="Adder">
       <a name="width" val="20"/>
     </comp>
